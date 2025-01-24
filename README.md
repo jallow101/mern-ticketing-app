@@ -81,12 +81,19 @@ http://localhost:5000/api
 
 
 
+## Project Structure
+
+The backend directory is organized as follows:
+
+```plaintext
 server/
-├── controllers/     # API logic for tickets, users, and comments
-├── models/          # Firestore schema and data models
-├── routes/          # API endpoints
-├── middleware/      # Authentication and error handling
-├── utils/           # Helper functions
-├── config/          # Firestore and server configuration
-├── .env             # Environment variables
+├── controllers/     # Handles API logic for tickets, users, and comments
+├── models/          # Defines Firestore schema and data models
+├── routes/          # Configures API endpoints
+├── middleware/      # Contains authentication and error-handling middleware
+├── utils/           # Utility functions (e.g., for JWT, error formatting)
+├── config/          # Firestore and server configuration files
+├── .env             # Environment variables (not included in the repo)
+├── package.json     # Node.js dependencies and scripts
 └── index.js         # Entry point of the server
+
